@@ -177,124 +177,138 @@ export default function KindergartenDetail() {
         </div>
 
         {/* Hero Info Card */}
-        <div className="max-w-7xl mx-auto px-5 lg:px-12 -mt-28 relative z-20">
-          <div className="bg-white/90 dark:bg-[#041423]/90 backdrop-blur-md rounded-2xl shadow-2xl border border-gray-200 dark:border-gray-700 p-6 md:p-8 flex flex-col lg:flex-row gap-6 items-start">
-            <div className="flex-shrink-0 w-full lg:w-1/2">
-              <h1 className="text-2xl md:text-3xl font-extrabold text-gray-800 dark:text-white">
-                {mock.name}
-              </h1>
+       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 -mt-20 relative z-20">
+  <div className="
+    bg-white/90 dark:bg-[#041423]/90 backdrop-blur-md 
+    rounded-2xl shadow-2xl border border-gray-200 dark:border-gray-700 
+    p-4 sm:p-6 md:p-8 
+    flex flex-col lg:flex-row gap-6 items-start lg:items-start
+  ">
+    
+    {/* Left Column */}
+    <div className="flex-shrink-0 w-full lg:w-1/2">
+      <h1 className="text-2xl md:text-3xl font-extrabold text-gray-800 dark:text-white text-center lg:text-left">
+        {mock.name}
+      </h1>
 
-              <div className="flex items-center gap-3 mt-3">
-                <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-gradient-to-r from-yellow-400 to-orange-400 text-black font-semibold shadow-sm">
-                  <Star size={18} /> <span>{mock.rating}</span>
-                </div>
-                <div className="text-sm text-gray-600 dark:text-gray-300">
-                  {mock.reviewsCount} ta sharh
-                </div>
-                <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-300 ml-4">
-                  <MapPin /> <span>{mock.location}</span>
-                </div>
-              </div>
+      <div className="flex flex-wrap items-center gap-3 mt-3 justify-center lg:justify-start">
+        <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-gradient-to-r from-yellow-400 to-orange-400 text-black font-semibold shadow-sm">
+          <Star size={18} /> <span>{mock.rating}</span>
+        </div>
 
-              <p className="mt-4 text-gray-700 dark:text-gray-300 leading-relaxed">
-                {mock.description}
-              </p>
+        <div className="text-sm text-gray-600 dark:text-gray-300">
+          {mock.reviewsCount} ta sharh
+        </div>
 
-              <div className="mt-4 flex flex-wrap gap-3">
-                {mock.features.slice(0, 4).map((f, idx) => (
-                  <div
-                    key={idx}
-                    className="px-3 py-1 rounded-full bg-gray-100 dark:bg-[#0b2231] text-sm text-gray-700 dark:text-gray-200"
-                  >
-                    {f}
-                  </div>
-                ))}
-              </div>
+        <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-300">
+          <MapPin /> <span>{mock.location}</span>
+        </div>
+      </div>
+
+      <p className="mt-4 text-gray-700 dark:text-gray-300 leading-relaxed text-center lg:text-left">
+        {mock.description}
+      </p>
+
+      <div className="mt-4 flex flex-wrap gap-3 justify-center lg:justify-start">
+        {mock.features.slice(0, 4).map((f, idx) => (
+          <div
+            key={idx}
+            className="px-3 py-1 rounded-full bg-gray-100 dark:bg-[#0b2231] text-sm text-gray-700 dark:text-gray-200"
+          >
+            {f}
+          </div>
+        ))}
+      </div>
+    </div>
+
+    {/* Right Column */}
+    <div className="w-full lg:w-1/2 flex flex-col gap-4">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-center sm:text-left">
+        <div>
+          <div className="text-sm text-gray-500 dark:text-gray-400">Oyiga narx</div>
+          <div className="text-2xl font-bold text-gray-900 dark:text-white">
+            {mock.pricePerMonth.toLocaleString()} UZS
+          </div>
+        </div>
+
+        <div>
+          <div className="text-sm text-gray-500 dark:text-gray-400">Yosh</div>
+          <div className="font-semibold text-gray-800 dark:text-gray-200">
+            {mock.ages}
+          </div>
+        </div>
+      </div>
+
+      {/* Contact & Working Hours */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div className="p-4 rounded-lg bg-gray-50 dark:bg-[#082532] border border-gray-100 dark:border-gray-700">
+          <div className="flex items-center gap-3">
+            <Phone className="text-green-500" />
+            <div>
+              <div className="text-xs text-gray-500 dark:text-gray-400">Telefon</div>
+              <Link onClick={handleCall} to={`tel:${mock.phone}`}>
+                <div className="font-medium text-gray-800 dark:text-gray-200">{mock.phone}</div>
+              </Link>
             </div>
+          </div>
+        </div>
 
-            {/* Right column: price, contact, hours */}
-            <div className="w-full lg:w-1/2 flex flex-col gap-4">
-              <div className="flex items-center justify-between">
-                <div>
-                  <div className="text-sm text-gray-500 dark:text-gray-400">
-                    Oyiga narx
-                  </div>
-                  <div className="text-2xl font-bold text-gray-900 dark:text-white">
-                    {mock.pricePerMonth.toLocaleString()} UZS
-                  </div>
-                </div>
-
-                <div className="text-right">
-                  <div className="text-sm text-gray-500 dark:text-gray-400">
-                    Yosh
-                  </div>
-                  <div className="font-semibold text-gray-800 dark:text-gray-200">
-                    {mock.ages}
-                  </div>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <div className="p-4 rounded-lg bg-gray-50 dark:bg-[#082532] border border-gray-100 dark:border-gray-700">
-                  <div className="flex items-center gap-3">
-                    <Phone className="text-green-500" />
-                    <div>
-                      <div className="text-xs text-gray-500 dark:text-gray-400">
-                        Telefon
-                      </div>
-                      <Link onClick={handleCall} to={`tel:${mock.phone}`}>
-                        <div className="font-medium text-gray-800 dark:text-gray-200">
-                          {mock.phone}
-                        </div>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="p-4 rounded-lg bg-gray-50 dark:bg-[#082532] border border-gray-100 dark:border-gray-700">
-                  <div className="flex items-center gap-3">
-                    <Clock className="text-indigo-500" />
-                    <div>
-                      <div className="text-xs text-gray-500 dark:text-gray-400">
-                        Ish vaqti
-                      </div>
-                      <div className="font-medium text-gray-800 dark:text-gray-200">
-                        {mock.hours[0].time}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-2 flex gap-3">
-                <button
-                  onClick={handleBook}
-                  className="flex-1 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white px-5 py-3 rounded-full font-semibold shadow-lg transition"
-                >
-                  Joy band qilish
-                </button>
-                <button
-                  onClick={() =>
-                    window.open(
-                      `https://www.google.com/maps/search/${encodeURIComponent(
-                        mock.location
-                      )}`,
-                      "_blank"
-                    )
-                  }
-                  className="px-4 py-3 rounded-full border border-gray-200 dark:border-gray-700 bg-white dark:bg-transparent text-gray-700 dark:text-gray-200 font-medium hover:shadow-md transition"
-                >
-                  <MapPin className="inline-block mr-2" /> Xaritada ko‘rish
-                </button>
-              </div>
-
-              <div className="mt-2 text-sm text-gray-600 dark:text-gray-400">
-                <strong>Sig‘im:</strong> {mock.capacity} o‘rin —{" "}
-                <strong>Qabul:</strong> haftaning barcha kunlari
+        <div className="p-4 rounded-lg bg-gray-50 dark:bg-[#082532] border border-gray-100 dark:border-gray-700">
+          <div className="flex items-center gap-3">
+            <Clock className="text-indigo-500" />
+            <div>
+              <div className="text-xs text-gray-500 dark:text-gray-400">Ish vaqti</div>
+              <div className="font-medium text-gray-800 dark:text-gray-200">
+                {mock.hours[0].time}
               </div>
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Buttons */}
+      <div className="mt-2 flex flex-col sm:flex-row gap-3 w-full">
+        <button
+          onClick={handleBook}
+          className="
+            w-full sm:flex-1 whitespace-nowrap
+            bg-gradient-to-r from-indigo-600 to-purple-600 
+            hover:from-indigo-700 hover:to-purple-700 
+            text-white px-5 py-3 rounded-full font-semibold 
+            shadow-lg transition
+          "
+        >
+          Joy band qilish
+        </button>
+
+        <button
+          onClick={() =>
+            window.open(
+              `https://www.google.com/maps/search/${encodeURIComponent(mock.location)}`,
+              "_blank"
+            )
+          }
+          className="
+            w-full sm:w-auto whitespace-nowrap
+            px-4 py-3 rounded-full 
+            border border-gray-200 dark:border-gray-700 
+            bg-white dark:bg-transparent 
+            text-gray-700 dark:text-gray-200 
+            font-medium hover:shadow-md transition
+          "
+        >
+          <MapPin className="inline-block mr-2" /> Xaritada ko‘rish
+        </button>
+      </div>
+
+      <div className="mt-2 text-sm text-gray-600 dark:text-gray-400 text-center sm:text-left">
+        <strong>Sig‘im:</strong> {mock.capacity} o‘rin —{" "}
+        <strong>Qabul:</strong> haftaning barcha kunlari
+      </div>
+    </div>
+  </div>
+</div>
+
       </header>
 
       {/* MAIN CONTENT */}
