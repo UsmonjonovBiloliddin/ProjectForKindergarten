@@ -3,6 +3,8 @@ import { Link, NavLink } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Sun, Moon, Globe } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { useDispatch, useSelector } from "react-redux";
+import { logout } from "../../Slice/Auth";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +13,9 @@ const Navbar = () => {
   const [profileOpen, setProfileOpen] = useState(false);
   const { t, i18n } = useTranslation();
   const profileRef = useRef();
-
+  const dispatch = useDispatch();
+  const {user} = useSelector(state => state.auth)
+  
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
     localStorage.setItem("i18nextLng", lng);
@@ -33,11 +37,16 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, []);
+  }, [user]);
 
   const toggleTheme = () => {
     setDark(!dark);
     document.documentElement.classList.toggle("dark");
+  };
+
+  const Logout = () => {
+    profileOpen && setProfileOpen(false);
+    dispatch(logout());
   };
 
   const links = [
@@ -46,13 +55,10 @@ const Navbar = () => {
     { name: t("recommendations"), path: "/recommendations" },
     { name: t("aboutUs"), path: "/aboutUs" },
     { name: t("contactUs"), path: "/contactUs" },
+    { name: t("AIchat"), path: "/AIchat" },
   ];
 
-  const user = {
-    firstName: "Biloliddin",
-    lastName: "Usmonjonov",
-    email: "bilol@example.com",
-  };
+ 
 
   return (
     <motion.nav
@@ -81,7 +87,7 @@ const Navbar = () => {
               <NavLink
                 to={link.path}
                 className={({ isActive }) =>
-                  `relative text-[16px] font-medium transition duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-gradient-to-r after:from-green-600 after:to-green-400 after:left-0 after:-bottom-1 after:rounded-full hover:after:w-full ${
+                  `relative text-[14px] font-medium transition duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-gradient-to-r after:from-green-600 after:to-green-400 after:left-0 after:-bottom-1 after:rounded-full hover:after:w-full ${
                     isActive
                       ? "text-green-600 dark:text-green-400 after:w-full"
                       : "text-gray-700 dark:text-white hover:text-green-600 dark:hover:text-green-400"
@@ -131,13 +137,13 @@ const Navbar = () => {
           </Link>
 
           {/* PROFILE */}
-          <div className="relative" ref={profileRef}>
+          {
+            user?  <div className="relative" ref={profileRef}>
             <button
               className="w-10 h-10 rounded-full bg-blue-500 text-white flex items-center justify-center font-medium text-sm hover:scale-105 transition-all"
               onClick={() => setProfileOpen(!profileOpen)}
             >
-              {user.firstName[0]}
-              {user.lastName[0]}
+              {user?.username?.slice(0, 2)}
             </button>
 
             <AnimatePresence>
@@ -150,17 +156,18 @@ const Navbar = () => {
                   className="absolute right-0 mt-2 w-64 bg-white dark:bg-gray-800 shadow-lg rounded-xl p-4 flex flex-col gap-2 origin-top-right z-50"
                 >
                   <div className="text-gray-800 dark:text-gray-100 font-medium">
-                    {user.firstName} {user.lastName}
+                    {user?.username}
                   </div>
-                  <div className="text-sm text-gray-500 dark:text-gray-400">{user.email}</div>
+                  <div className="text-sm text-gray-500 dark:text-gray-400">{user?.email}</div>
 
-                  <button className="mt-2 w-full py-2 rounded-lg bg-red-500 text-white font-medium hover:bg-red-600 transition">
+                  <button onClick={Logout} className="mt-2 w-full py-2 rounded-lg bg-red-500 text-white font-medium hover:bg-red-600 transition">
                     {t("logout")}
                   </button>
                 </motion.div>
               )}
             </AnimatePresence>
-          </div>
+          </div>:""
+          }
         </div>
 
         {/* MOBILE BUTTON */}

@@ -182,7 +182,7 @@ const RecommendationsPage = () => {
             </h3>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {recommended.map((rec, i) => (
-                <Link to={'/kindergartens'}>
+                <Link to={'/kindergartendetail'}>
                       <div
                   key={i}
                   className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300 cursor-pointer overflow-hidden border border-transparent"
