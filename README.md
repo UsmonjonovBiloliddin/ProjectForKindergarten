@@ -47,16 +47,16 @@ Kinder-Garden enables parents to:
 Follow these steps to run Kinder-Garden locally:
 
 **Clone the repository**  
-```bash
+
 git clone https://github.com/UsmonjonovBiloliddin/ProjectForKindergarten.git
 
-```bash
+```bash ```
 cd ProjectForKindergarten
 
-```bash
+```bash```
 npm install
 
-```bash
+```bash```
 npm run dev
 
 
@@ -66,4 +66,4 @@ npm run dev
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/UsmonjonovBiloliddin)  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/biloliddin-usmonjonov-1a2a48372/)  
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.usmonjonovbiloliddin40@gmail.com)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:usmonjonovbiloliddin40@gmail.com)
