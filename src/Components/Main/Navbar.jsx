@@ -74,7 +74,7 @@ const Navbar = () => {
           className="text-2xl sm:text-3xl font-extrabold bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text text-transparent flex items-center gap-2"
         >
           <img
-            src="https://www.marbleskidsmuseum.org/assets/2455/kok-logo-vf-03-2024081401285203.png"
+            src="/kok-logo-vf-03.png"
             alt="BogchaTop"
             className="w-[200px] rounded-xl"
           />
