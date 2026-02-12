@@ -12,9 +12,10 @@ useEffect(() => {
   }, [language]);
 
   return (
-    <header className="relative w-full min-h-[700px] bg-white dark:bg-gray-900 overflow-hidden py-10 md:py-16 transition-colors duration-500">
+    <header className="relative w-full h-[660px]  bg-white dark:bg-gray-900 overflow-hidden py-10 md:py-16 transition-colors duration-500">
       {/* Kontent */}
-      <div className="relative z-10 mx-auto px-6 sm:px-10 md:px-14 lg:px-20 grid grid-cols-1 md:grid-cols-[60%_40%] items-center gap-10 md:gap-12 ">
+     <div className="container  ">
+       <div className="relative z-10 mx-auto px-6 sm:px-10 md:px-14 lg:px-20 grid grid-cols-1 md:grid-cols-[60%_40%] items-center gap-10 md:gap-12 ">
         {/* Chap tomon – text */}
         <div className="text-center w-full md:text-left">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl font-extrabold text-gray-900 dark:text-white leading-tight">
@@ -61,6 +62,7 @@ useEffect(() => {
           50% { transform: translateY(-10px); }
         }
       `}</style>
+     </div>
     </header>
   );
 }

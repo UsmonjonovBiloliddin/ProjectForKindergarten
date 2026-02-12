@@ -36,7 +36,8 @@ export default function Features() {
 
   return (
     <section className="py-20 px-6 md:px-16 lg:px-24 bg-gray-50 dark:bg-[#0f172a] transition-colors duration-500">
-      <motion.h2
+     <div className="container">
+       <motion.h2
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -67,6 +68,7 @@ export default function Features() {
           </motion.div>
         ))}
       </div>
+     </div>
     </section>
   );
 }

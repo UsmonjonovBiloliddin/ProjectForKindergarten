@@ -44,7 +44,7 @@ export default function App() {
       <div className="pt-19 ">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/kindergartendetail" element={<KindergartenDetail />} />
+          <Route path="/kindergartendetail/:id" element={<KindergartenDetail />} />
           <Route path="/kindergartens" element={<Kindergartens />} />
           <Route path="/recommendations" element={<Recommendations />} />
           <Route path="/aboutUs" element={<AboutUs />} />

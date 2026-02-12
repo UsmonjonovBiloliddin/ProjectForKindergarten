@@ -1,5 +1,7 @@
+// src/Service/api.js
 import axios from "axios";
 
-axios.defaults.baseURL = "https://bogcha-5pbn.onrender.com/";
-
-export default axios;
+export default axios.create({
+  baseURL: "https://bogcha-x9p4.onrender.com",
+  headers: { accept: "application/json" },
+});

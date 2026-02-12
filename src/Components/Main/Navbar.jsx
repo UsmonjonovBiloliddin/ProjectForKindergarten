@@ -66,7 +66,8 @@ const Navbar = () => {
         scrolled ? "bg-white shadow-md dark:bg-gray-900" : "bg-white dark:bg-gray-900"
       }`}
     >
-      <div className="mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-10 py-2">
+     <div className="container">
+       <div className="mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-10 py-2">
         
         {/* LOGO */}
         <Link
@@ -231,6 +232,7 @@ const Navbar = () => {
           </motion.div>
         )}
       </AnimatePresence>
+     </div>
     </motion.nav>
   );
 };

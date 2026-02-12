@@ -39,7 +39,8 @@ export default function RecommendedKindergarten() {
 
   return (
     <section className="py-12 sm:py-14 md:py-16 bg-gray-50 dark:bg-[#0d1117] transition-colors duration-300">
-      <div className="mx-auto px-6 sm:px-10 md:px-16 lg:px-20 max-w-10xl">
+      <div className="container">
+        <div className="mx-auto px-6 sm:px-10 md:px-16 lg:px-20 max-w-10xl">
         {/* Title + Navigation */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8 sm:mb-10 gap-5">
           <div>
@@ -107,6 +108,7 @@ export default function RecommendedKindergarten() {
             </SwiperSlide>
           ))}
         </Swiper>
+      </div>
       </div>
     </section>
   );
