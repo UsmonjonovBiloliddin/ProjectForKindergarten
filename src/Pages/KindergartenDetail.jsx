@@ -88,6 +88,7 @@ export default function KindergartenDetail() {
       </div>
     );
   }
+  
 
   if (!loading && errorText) {
     return (

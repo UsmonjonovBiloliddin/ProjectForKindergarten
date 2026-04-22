@@ -26,36 +26,36 @@
   "littleStarsLocation": "Toshkent, Mirzo Ulug‘bek",
   "littleStarsDescription": "Har bir bola yulduzga aylanadi!",
   "categoriesTitle": "Mavjud Bog‘chalar toifalari",
-  
+
   "stateKindergartenTitle": "Davlat bog‘chalari",
   "stateKindergartenDesc": "Rasmiy litsenziyaga ega, xavfsiz va arzon bog‘chalar.",
-  
+
   "privateKindergartenTitle": "Xususiy bog‘chalar",
   "privateKindergartenDesc": "Sifatli ta’lim va qulay sharoitlar bilan xizmat ko‘rsatadi.",
-  
+
   "montessoriTitle": "Montessori uslubi",
   "montessoriDesc": "Bolaning mustaqil o‘rganish salohiyatini rivojlantiradi.",
-  
+
   "englishProgramTitle": "Ingliz tili dasturi",
   "englishProgramDesc": "Dastlabki bosqichdanoq ingliz tili muhitida o‘rganish imkoniyati.",
   "featuresTitle": "Nega aynan bizni tanlashadi?",
-  
+
   "trustSafetyTitle": "Ishonchlilik va xavfsizlik",
   "trustSafetyDesc": "Har bir bog‘cha ruxsatnoma va sanitariya talablari asosida tekshirilgan.",
-  
+
   "mapFindingTitle": "Xarita orqali qulay topish",
   "mapFindingDesc": "Hududingizdagi bog‘chalarni interaktiv xarita orqali toping.",
-  
+
   "parentChoiceTitle": "Ota-onalar uchun ishonchli tanlov",
   "parentChoiceDesc": "Fikr-mulohazalar asosida eng yaxshi bog‘chani tanlash imkoniyati.",
-  
+
   "ratingTitle": "Reyting va sharhlar tizimi",
   "ratingDesc": "Har bir bog‘cha uchun real foydalanuvchi sharhlari mavjud.",
-  
+
   "supportTitle": "24/7 qo‘llab-quvvatlash",
   "supportDesc": "Savollar uchun onlayn yordam xizmati doimo faol.",
 
- "headerTitle": "Bog‘chalar ro‘yxati",
+  "headerTitle": "Bog‘chalar ro‘yxati",
   "headerDesc": "Eng yaxshi bog‘chalarni qidiring va farzandingiz uchun tanlang",
   "searchPlaceholder": "Bog‘cha nomi yoki tavsif bo‘yicha qidiring...",
   "gridView": "Grid ko‘rinishi",
@@ -113,7 +113,7 @@
   "readyToChoose": "Farzandingiz uchun to‘g‘ri tanlov qilishga tayyormisiz?",
   "viewKindergartens": "Bog‘chalarni ko‘rish",
   "footerPhrase": "Ishonch, sifat va mehr — bizning asosiy qadriyatlarimiz.",
-   "contactUsTitle": "Biz bilan bog‘laning",
+  "contactUsTitle": "Biz bilan bog‘laning",
   "contactUsText": "Sizning fikr va savollaringiz biz uchun juda muhim. Quyidagi shakl orqali murojaat qoldiring yoki biz bilan to‘g‘ridan-to‘g‘ri aloqaga chiqing.",
   "contactInfo": "Aloqa ma’lumotlari",
   "contactForm": "Murojaat shakli",
@@ -129,7 +129,7 @@
   "loginGoogle": "Google orqali kirish",
   "noAccount": "Akkount yo‘qmi?",
   "registerLink": "Ro‘yxatdan o‘tish",
-   "registerTitle": "Ro‘yxatdan o‘tish",
+  "registerTitle": "Ro‘yxatdan o‘tish",
   "placeholderUsername": "Username",
   "placeholderEmail": "Email",
   "placeholderPassword": "Parol",
@@ -148,7 +148,7 @@
     "followUs": "Bizni ijtimoiy tarmoqlarda kuzatib boring 🌟",
     "rights": "Barcha huquqlar himoyalangan."
   },
-   "app_name": "KinderGarden",
+  "app_name": "KinderGarden",
   "ai_chat": "AI Chat",
   "online": "Online",
   "greeting": "Salom! 👋 Men KinderGarden loyihasi AI yordamchisiman. Bog'cha qidirish va tanlashda sizga yordam beraman. Farzandingiz uchun qanday bog'cha qidiryapsiz?",
@@ -188,5 +188,7 @@
   "works_24_7": "24/7 ishlaydi",
   "real_time_response": "Real vaqtda javob",
   "error_message": "Xatolik yuz berdi. Iltimos, keyinroq urinib ko'ring.",
-  "speech_not_supported": "Speech recognition is not supported in your browser."
+  "speech_not_supported": "Speech recognition is not supported in your browser.",
+  "articles": "Maqolalar",
+  "AIchat": "AI Suhbat"
 }

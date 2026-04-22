@@ -1,6 +1,9 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
+*{
+  scroll-behavior: smooth;
+}
 .container{
   max-width: 1500px;
   margin: 0 auto;
@@ -29,3 +32,4 @@
 ::-webkit-scrollbar-corner {
   background-color: transparent;
 }
+

@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useEffect } from "react";
 
 export default function AboutUs() {
   const { t } = useTranslation();
@@ -38,6 +39,10 @@ export default function AboutUs() {
       text: t("ratingSystemText"),
     },
   ];
+
+  useEffect(() =>{
+    document.documentElement.scrollTop = 0
+  },[])
 
   return (
     <section className="relative bg-gradient-to-b from-blue-50 via-white to-blue-100 dark:from-[#030b18] dark:via-[#041423] dark:to-[#030b18] py-20 px-6 transition-colors duration-500 overflow-hidden">

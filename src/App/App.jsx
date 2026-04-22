@@ -17,6 +17,7 @@ import Auth_Service from "../Service/auth_service";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import AIChat from "../Pages/AIChat";
+import ArticlesPage from "../Pages/Aricles";
 export default function App() {
   const [changeLang, setChangeLang] = "uz";
   const { i18n } = useTranslation();
@@ -52,6 +53,7 @@ export default function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/AIchat"element={<AIChat />} />
+          <Route path="/Articles"element={<ArticlesPage />} />
         </Routes>
       </div>
       <Footer />

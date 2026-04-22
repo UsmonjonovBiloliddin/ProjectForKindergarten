@@ -1,9 +1,12 @@
 import { Mail, Phone, MapPin, Send, Clock } from "lucide-react";
+import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 export default function ContactUs() {
   const { t } = useTranslation();
-
+ useEffect(() =>{
+    document.documentElement.scrollTop = 0
+  },[])
   return (
     <section className="bg-gradient-to-b from-blue-50 via-white to-blue-100 dark:from-[#020b16] dark:via-[#041423] dark:to-[#03101f] py-20 px-6 transition-colors duration-500">
       <div className="max-w-6xl mx-auto">

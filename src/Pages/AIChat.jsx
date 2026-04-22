@@ -203,6 +203,10 @@ export default function AIChat() {
     }
   };
 
+   useEffect(() =>{
+    document.documentElement.scrollTop = 0
+  },[])
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 text-gray-900 dark:bg-gradient-to-br dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 dark:text-white transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 py-4">

@@ -1,6 +1,6 @@
 // src/pages/Register.jsx
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Mail, User, Lock, UserPlus } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -20,7 +20,9 @@ export default function Register() {
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
-
+ useEffect(() =>{
+    document.documentElement.scrollTop = 0
+  },[])
   const handleRegister = async (e) => {
     e.preventDefault();
     dispatch(signUserStart());

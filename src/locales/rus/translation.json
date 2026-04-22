@@ -13,7 +13,7 @@
   "contactUs": "Контакты",
   "login": "Войти",
   "register": "Регистрация",
-   "recommendedKindergartenTitle": "Рекомендованные детские сады",
+  "recommendedKindergartenTitle": "Рекомендованные детские сады",
   "recommendedKindergartenSubtitle": "Самые популярные и надежные детские сады",
   "recommendedKindergartenDetails": "Подробнее",
   "sunnyKidsName": "Sunny Kids Garden",
@@ -25,36 +25,36 @@
   "littleStarsName": "Little Stars",
   "littleStarsLocation": "Ташкент, Мирзо Улугбек",
   "littleStarsDescription": "Каждый ребенок превращается в звезду!",
-   "categoriesTitle": "Существующие категории детских садов",
-  
+  "categoriesTitle": "Существующие категории детских садов",
+
   "stateKindergartenTitle": "Государственные сады",
   "stateKindergartenDesc": "Имеют официальную лицензию, безопасные и недорогие сады.",
-  
+
   "privateKindergartenTitle": "Частные сады",
   "privateKindergartenDesc": "Предоставляют качественное образование и комфортные условия.",
-  
+
   "montessoriTitle": "Метод Монтессори",
   "montessoriDesc": "Развивает способность ребенка к самостоятельному обучению.",
-  
+
   "englishProgramTitle": "Программа английского языка",
   "englishProgramDesc": "Возможность изучать английский язык с раннего этапа в языковой среде.",
   "featuresTitle": "Почему выбирают именно нас?",
-  
+
   "trustSafetyTitle": "Надежность и безопасность",
   "trustSafetyDesc": "Каждый сад проверен на соответствие лицензии и санитарным требованиям.",
-  
+
   "mapFindingTitle": "Удобный поиск по карте",
   "mapFindingDesc": "Находите сады в вашем районе с помощью интерактивной карты.",
-  
+
   "parentChoiceTitle": "Надежный выбор для родителей",
   "parentChoiceDesc": "Возможность выбрать лучший сад на основе отзывов.",
-  
+
   "ratingTitle": "Система рейтингов и отзывов",
   "ratingDesc": "Для каждого сада доступны реальные отзывы пользователей.",
-  
+
   "supportTitle": "Круглосуточная поддержка",
   "supportDesc": "Онлайн-помощь доступна 24/7 для всех вопросов.",
-"headerTitle": "Список детских садов",
+  "headerTitle": "Список детских садов",
   "headerDesc": "Найдите лучшие детские сады и выберите для вашего ребенка",
   "searchPlaceholder": "Поиск по названию или описанию детского сада...",
   "gridView": "В виде сетки",
@@ -81,7 +81,7 @@
   "state": "Государственный",
   "details": "Подробнее",
   "viewOnMap": "Посмотреть на карте",
-"findBestKindergarten": "Найдите лучший детский сад для вашего ребенка 🎯",
+  "findBestKindergarten": "Найдите лучший детский сад для вашего ребенка 🎯",
   "childAge": "Возраст вашего ребенка",
   "select": "Выберите",
   "location": "Местоположение",
@@ -131,7 +131,7 @@
   "noAccount": "Нет аккаунта?",
   "registerLink": "Зарегистрироваться",
 
-   "registerTitle": "Регистрация",
+  "registerTitle": "Регистрация",
   "placeholderUsername": "Имя пользователя",
   "placeholderEmail": "почта",
   "placeholderPassword": "Пароль",
@@ -191,5 +191,7 @@
   "works_24_7": "Работает 24/7",
   "real_time_response": "Ответ в реальном времени",
   "error_message": "Произошла ошибка. Пожалуйста, попробуйте позже.",
-  "speech_not_supported": "Распознавание речи не поддерживается в вашем браузере."
+  "speech_not_supported": "Распознавание речи не поддерживается в вашем браузере.",
+  "articles": "Статьи",
+  "AIchat": "AI Чат"
 }

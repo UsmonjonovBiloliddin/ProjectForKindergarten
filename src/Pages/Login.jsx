@@ -1,6 +1,6 @@
 // src/pages/Login.jsx
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Mail, Lock, LogIn } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -37,6 +37,10 @@ export default function Login() {
       dispatch(signUserErorr(error.response.data.detail));
     }
   };
+
+   useEffect(() =>{
+      document.documentElement.scrollTop = 0
+    },[])
 
   return (
     <div className="flex items-center justify-center mt-[-60px] min-h-screen bg-gray-50 dark:bg-[#0d1117] transition-colors duration-500 px-3">

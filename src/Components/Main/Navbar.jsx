@@ -56,6 +56,8 @@ const Navbar = () => {
     { name: t("aboutUs"), path: "/aboutUs" },
     { name: t("contactUs"), path: "/contactUs" },
     { name: t("AIchat"), path: "/AIchat" },
+    { name: t("articles"), path: "/Articles" },
+
   ];
 
  
